@@ -1,0 +1,121 @@
+/*----------- Reset css Elemnents----------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------- General css Elements------------ */
+
+html,body{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  /* background-color: var(--Dark-cyan); */
+}
+
+/*----------- Css Variables------------ */
+
+:root{
+  /* ### Primary */
+ --Dark-cyan: hsl(185, 75%, 39%);
+ --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+ --Dark-grayish-blue: hsl(227, 10%, 46%);
+  /* ### Neutral */
+ --Dark-gray: hsl(0, 0%, 59%);
+ /* ### Font-weights */
+ --medium-weight:400;
+ --bold-weight:700;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(../images/bg-pattern-top.svg),
+                    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat , no-repeat;     
+  background-position: right 50vw bottom 50vh , left 50vw top 50vh;  
+  display: flex;   
+  justify-content: center;      
+  align-items: center;  
+}
+
+.container{
+  width: 400px;
+  height:430px; 
+  border: 1px solid #000;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height:100%;
+  padding: 0px 50px;
+}
+
+.card_info img{
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--Dark-gray);
+  margin-top: -50px;
+}
+
+.vector_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.text-cont{
+  display: flex;
+}
+
+.text-cont span{
+  margin-left: 24px;
+  color: var(--Dark-gray);
+  font-weight: var(--medium-weight);
+}
+
+.text-cont h4{
+  font-size: 1.1rem;
+}
+
+h3{
+  margin-top: 20px;
+  color: var(--Dark-gray);
+}
+
+.statics{
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.statics .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.statics .box span{
+  font-size: 0.9rem;
+  color: var(--Dark-gray);
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+
+.statics .box h5{
+  font-weight: var(--bold-weight);
+  font-size:1.1rem ;
+}
+
